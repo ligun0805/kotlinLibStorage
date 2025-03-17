@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="files_fragment_label">Failid</string>
+    <string name="edit_connection">Muuda ühendust</string>
+    <string name="server">Server</string>
+    <string name="error_occurred">Tekkis viga</string>
+    <string name="owner">Omanik</string>
+    <string name="bytes">%d baiti</string>
+    <string name="kilobytes">%.3f KiB</string>
+    <string name="terabytes">%.2f TiB</string>
+    <string name="cancel">Katkesta</string>
+    <string name="ok">Sobib</string>
+    <string name="retry">Proovi uuesti</string>
+    <string name="copy">Kopeeri</string>
+    <string name="dir_creation_failed">Kausta loomine ei õnnestunud</string>
+    <string name="upload_file">Laadi fail üles</string>
+    <string name="bad_file">Vigane faili sisu</string>
+    <string name="preview">Eelvaade</string>
+    <string name="uploading">Üleslaadimine: %s</string>
+    <string name="uploading_multi">Üleslaadimine: %%s (fail %d/%d)</string>
+    <string name="downloading">Allalaadimine: %s</string>
+    <string name="not_started">pole veel alanud</string>
+    <string name="percent">%d%%</string>
+    <string name="file_content">Faili sisu</string>
+    <string name="save">Salvesta</string>
+    <string name="mtm_accept_cert">Kas soovid nõustuda tundmatu sertifikaadiga?</string>
+    <string name="mtm_cert_expired">Serveri sertifikaat on aegunud.
+\n
+\n%s.</string>
+    <string name="mtm_unknown_err">%s
+\n
+\n%s</string>
+    <string name="mtm_parsing_err">Süntaksianalüüsi viga: %s</string>
+    <string name="mtm_accept_server_name">Kas nõustud, et serveri nimi ei klapi sertifikaadis leiduvaga?</string>
+    <string name="mtm_cert_details">Sertifikaadi üksikasjad:
+\n%s</string>
+    <string name="mtm_decision_always">Usalda</string>
+    <string name="mtm_decision_abort">Katkesta</string>
+    <string name="mtm_cert_details_properties">%s
+\nKehtib alates %s kuni %s
+\nSHA-1: %s
+\nSHA-256: %s
+\nAllkirjastaja: %s</string>
+    <string name="name">Nimi</string>
+    <string name="sorting">Järjestamine</string>
+    <string name="descending">Kahanevalt</string>
+    <string name="security_menu">Turvavalikud</string>
+    <string name="del_ssh_auth">Kustuta usaldatud SSH autentimistunnused</string>
+    <string name="host_key_unknown">Autentsust ei saa kinnitada</string>
+    <string name="host_key_changed">HOIATUS: hosti võti on muutunud</string>
+    <string name="as_server">Serverina</string>
+    <string name="private_data">Kasuta privaatset andmeühendust</string>
+    <string name="show_hidden">Näita peidetud faile</string>
+    <string name="download_multiple">Laadi mitu faili korraga alla</string>
+    <string name="download_summary">Allalaadimine lõppes: %d õnnestus, %d ei õnnestunud</string>
+    <string name="downloading_multi">Allalaadimine: %%s (fail %d/%d)</string>
+    <string name="saf_integration">Kasuta SAF (Storage Access Framework) lõimimist (Eeldab rakenduse uuesti käivitamist. Kõik serverid seda võimalust ei toeta ja seda ei saa kasutada, kui autentimine on salasõnapõhine.)</string>
+    <string name="download_all">Laadi kõik alla</string>
+    <string name="enter_password">Sisesta salasõna</string>
+    <string name="connections_fragment_label">Ühendused</string>
+    <string name="download_file">Laadi alla</string>
+    <string name="add_connection">Lisa ühendus</string>
+    <string name="password">Salasõna</string>
+    <string name="file_properties">Omadused</string>
+    <string name="size">Suurus</string>
+    <string name="gigabytes">%.2f GiB</string>
+    <string name="delete">Kustuta</string>
+    <string name="delete_connection_confirmation">Kas sa kindlasti soovid selle ühenduse kustutada?</string>
+    <string name="title">Pealkiri</string>
+    <string name="username">Kasutajanimi</string>
+    <string name="filename">Failinimi</string>
+    <string name="megabytes">%.3f MiB</string>
+    <string name="delete_confirmation">Kas sa kindlasti soovid selle faili kustutada?</string>
+    <string name="start_directory">Kaust, kust soovid alustada - juurkausta jaoks jäta tühjaks</string>
+    <string name="del_cert">Kustuta usaldatud sertifikaadid</string>
+    <string name="no_connections">Ühendusi pole</string>
+    <string name="add_file">Lisa fail</string>
+    <string name="select_file">Vali fail</string>
+    <string name="edit">Muuda</string>
+    <string name="rename">Muuda nime</string>
+    <string name="new_filename">Uus failinimi</string>
+    <string name="enter_new_filename">Sisesta uus failinimi</string>
+    <string name="group">Grupp</string>
+    <string name="dir_name">Kausta nimi</string>
+    <string name="enter_dir_name">Sisesta kausta nimi</string>
+    <string name="delete_dir_confirmation">Kas sa kindlasti soovid selle kausta kustutada?</string>
+    <string name="upload_completed">Üleslaadimine õnnestus</string>
+    <string name="upload_failed">Üleslaadimine ei õnnestunud</string>
+    <string name="download_completed">Allalaadimine õnnestus</string>
+    <string name="download_failed">Allalaadimine ei õnnestunud</string>
+    <string name="directory_is_empty">Kaust on tühi</string>
+    <string name="delete_completed">Kustutamine õnnestus</string>
+    <string name="deletion_failed">Kustutamine ei õnnestunud</string>
+    <string name="renaming_completed">Nime muutmine õnnestus</string>
+    <string name="renaming_failed">Nime muutmine ei õnnestunud</string>
+    <string name="dir_creation_completed">Kausta loomine õnnestus</string>
+    <string name="timestamp">Ajatempel</string>
+    <string name="points_to">Viitab asukohale</string>
+    <string name="port">Port</string>
+    <string name="go_to">Mine</string>
+    <string name="update">Uuenda</string>
+    <string name="add_bookmark">Lisa järjehoidja</string>
+    <string name="edit_bookmark">Muuda järjehoidjat</string>
+    <string name="directory">Kataloog - juurkausta jaoks jäta tühjaks</string>
+    <string name="bookmarks">Järjehoidjad</string>
+    <string name="no_bookmarks">Järjehoidjaid pole</string>
+    <string name="delete_connection_message">Sellega kustutad kõik järjehoidjad sellest ühendusest.</string>
+    <string name="add_directory">Lisa kaust</string>
+    <string name="upload_summary">Üleslaadimine lõppes: %d õnnestus, %d ei õnnestunud</string>
+    <string name="connection_type_ftp">FTP</string>
+    <string name="connection_type_ftps">FTPS</string>
+    <string name="connection_type_sftp">SFTP</string>
+    <string name="implicit">Koheselt krüptitud FTPS-ühendus</string>
+    <string name="utf8">Kasuta UTF-8 märgistikku</string>
+    <string name="passive">Kasuta passiivset režiimi</string>
+    <string name="private_key">Kasuta privaatvõtit</string>
+    <string name="select_key_file">Vali võti</string>
+    <string name="key_error">Võtme töötlemine ei õnnestunud</string>
+    <string name="ask_password">Ühendamisel küsi salasõna</string>
+    <string name="dir_delete_message">Kaust peab olema tühi. Kui ta pole tühi, siis mitte midagi ei juhtu.</string>
+    <string name="delete_bookmark_confirmation">Kas sa kindlasti soovid selle järjehoidja kustutada?</string>
+    <string name="error_descriptions">Tõenäoliselt sinu nutiseadmel hetkel puudub võrguühendus, server pole praegu leitav või salasõna/kasutajanimi/sertifikaat pole õiged. Kui sa arvad, et siiski on tegemist rakenduse veaga, siis palun koopeeri veateade.</string>
+    <string name="host_key_unknown_msg">„%1$s“ hosti autentsust ei saa kinnitada.
+\n„%2$s“ võtme sõrmejälg on „%3$s“.</string>
+    <string name="host_key_changed_msg">„%1$s“ hosti võti on muutunud. Keegi võib sinu võrguliiklust hetkel pealt kuulata (vahendusrünne)!
+\n
+\nAga on ka võimalik, et hosti võtmed on just praegu või hiljuti muudetud.
+\nHosti poolt saadetud „%2$s“ võtme sõrmejälg on „%3$s“.</string>
+    <string name="mtm_trust_anchor">Serveri sertifikaat pole allkirjastatud ühegi tunnustaud sertifitseerimiskeskuse (CA) poolt.
+\n
+\n%s</string>
+    <string name="app_name">FTPKlient</string>
+</resources>

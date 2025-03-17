@@ -1,0 +1,40 @@
+when:
+    event: [pull_request, push, tag]
+
+steps:
+  - name: build
+    image: alvrme/alpine-android:android-35-jdk17
+    commands:
+      - ./gradlew :app:assembleDebug
+    when:
+      event: [pull_request, push]
+  - name: publish
+    image: curlimages/curl
+    commands: 'curl --user qwerty287:$CODEBERG_TOKEN --upload-file app/build/outputs/apk/debug/app-debug.apk "https://codeberg.org/api/packages/qwerty287/generic/ftpclient_debug/${CI_COMMIT_SHA}/app-release.apk"'
+    environment:
+        CODEBERG_TOKEN:
+            from_secret: CODEBERG_TOKEN
+    when:
+      event: push
+
+  - name: build-release
+    image: alvrme/alpine-android:android-35-jdk17
+    commands:
+      - echo "$KEYSTORE" | base64 -d > app/keystore.jks
+      - echo "$KEYSTORE_PROPERTIES" | base64 -d > keystore.properties
+      - ./gradlew :app:assembleRelease
+    environment:
+        KEYSTORE:
+            from_secret: KEYSTORE
+        KEYSTORE_PROPERTIES:
+            from_secret: KEYSTORE_PROPERTIES
+    when:
+      event: tag
+  - name: publish-release
+    image: curlimages/curl
+    commands: 'curl --user qwerty287:$CODEBERG_TOKEN --upload-file app/build/outputs/apk/release/app-release.apk "https://codeberg.org/api/packages/qwerty287/generic/ftpclient_debug/${CI_COMMIT_TAG}/release.apk"'
+    environment:
+        CODEBERG_TOKEN:
+            from_secret: CODEBERG_TOKEN
+    when:
+      event: [tag]

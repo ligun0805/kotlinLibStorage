@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/ConnectionsFragment">
+
+    <fragment
+        android:id="@+id/ConnectionsFragment"
+        android:name="de.qwerty287.ftpclient.ui.connections.ConnectionsFragment"
+        android:label="@string/connections_fragment_label"
+        tools:layout="@layout/fragment_connections">
+
+        <action
+            android:id="@+id/action_ConnectionsFragment_to_FilesFragment"
+            app:destination="@id/FilesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_ConnectionsFragment_to_AddConnectionFragment"
+            app:destination="@id/AddConnectionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_ConnectionsFragment_to_BookmarksFragment"
+            app:destination="@id/BookmarksFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/FilesFragment"
+        android:name="de.qwerty287.ftpclient.ui.files.FilesFragment"
+        android:label="@string/files_fragment_label"
+        tools:layout="@layout/fragment_files">
+
+        <action
+            android:id="@+id/action_FilesFragment_to_FilesFragment"
+            app:destination="@id/FilesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_FilesFragment_to_AddBookmarkFragment"
+            app:destination="@id/AddBookmarkFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_FilesFragment_to_FilePropertiesFragment"
+            app:destination="@id/FilePropertiesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_FilesFragment_to_FileViewFragment"
+            app:destination="@id/FileViewFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_FilesFragment_to_ZipViewerFragment"
+            app:destination="@id/ZipViewerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddConnectionFragment"
+        android:name="de.qwerty287.ftpclient.ui.connections.AddConnectionFragment"
+        android:label="@string/add_connection"
+        tools:layout="@layout/fragment_add_connection"/>
+
+    <fragment
+        android:id="@+id/FilePropertiesFragment"
+        android:name="de.qwerty287.ftpclient.ui.files.FilePropertiesFragment"
+        android:label="@string/file_properties"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"
+        tools:layout="@layout/fragment_file_properties"/>
+
+    <fragment
+        android:id="@+id/AddBookmarkFragment"
+        android:name="de.qwerty287.ftpclient.ui.bookmarks.AddBookmarkFragment"
+        android:label="@string/add_bookmark"
+        tools:layout="@layout/fragment_add_bookmark"/>
+
+    <fragment
+        android:id="@+id/BookmarksFragment"
+        android:name="de.qwerty287.ftpclient.ui.bookmarks.BookmarksFragment"
+        android:label="@string/bookmarks"
+        tools:layout="@layout/fragment_bookmarks">
+
+        <action
+            android:id="@+id/action_BookmarksFragment_to_FilesFragment"
+            app:destination="@id/FilesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+        <action
+            android:id="@+id/action_BookmarksFragment_to_AddBookmarkFragment"
+            app:destination="@id/AddBookmarkFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/UploadFileIntentFragment"
+        android:name="de.qwerty287.ftpclient.ui.upload.UploadFileIntentFragment"
+        android:label="@string/upload_file">
+
+        <action
+            android:id="@+id/action_UploadFileIntentFragment_to_FilesFragment"
+            app:destination="@id/FilesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <action
+        android:id="@+id/action_to_UploadFileIntentFragment"
+        app:destination="@id/UploadFileIntentFragment"/>
+
+    <fragment
+        android:id="@+id/FileViewFragment"
+        android:name="de.qwerty287.ftpclient.ui.files.view.FileViewFragment"
+        android:label="@string/preview"/>
+
+    <fragment
+        android:id="@+id/ZipViewerFragment"
+        android:name="de.qwerty287.ftpclient.ui.ZipViewerFragment"
+        android:label="ZIP Contents">
+        <argument
+            android:name="remotePath"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

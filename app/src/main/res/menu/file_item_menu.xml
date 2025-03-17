@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- ... your existing menu items ... -->
+    <item
+        android:id="@+id/action_view_zip"
+        android:title="View Contents"
+        android:visible="false"/> <!-- Will be made visible only for ZIP files -->
+</menu> 

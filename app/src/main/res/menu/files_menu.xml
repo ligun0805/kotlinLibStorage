@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="gone">
+    <item
+        android:icon="@drawable/sort"
+        android:title="@string/sorting"
+        android:visibility="gone"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_name"
+                    android:checked="true"
+                    android:title="@string/name" />
+                <item
+                    android:id="@+id/sort_timestamp"
+                    android:title="@string/timestamp" />
+                <item
+                    android:id="@+id/sort_size"
+                    android:title="@string/size" />
+                <item
+                    android:id="@+id/sort_server"
+                    android:title="@string/as_server" />
+            </group>
+            <item
+                android:id="@+id/sort_descending"
+                android:checkable="true"
+                android:title="@string/descending" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/update_ui"
+        android:title="@string/update"
+        android:visibility="gone" />
+
+    <item
+        android:id="@+id/go_to"
+        android:title="@string/go_to"
+        android:visibility="gone" />
+
+    <item
+        android:id="@+id/bookmark"
+        android:title="@string/add_bookmark"
+        android:visibility="gone"
+        android:visible="false"
+        tools:visibility="gone" />
+
+    <item
+        android:id="@+id/show_hidden"
+        android:checkable="true"
+        android:checked="true"
+        android:title="@string/show_hidden"
+        android:visibility="gone" />
+
+    <item
+        android:id="@+id/download_multiple"
+        android:title="@string/download_multiple"
+        android:visibility="gone"
+        android:visible="false" />
+
+</menu>

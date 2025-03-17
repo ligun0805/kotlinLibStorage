@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/file"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:drawablePadding="24dp"
+    android:ellipsize="end"
+    android:focusable="true"
+    android:maxLines="2"
+    android:padding="12dp"
+    android:textSize="16sp"/>

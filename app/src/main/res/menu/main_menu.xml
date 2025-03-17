@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sftp_connect"
+        android:icon="@drawable/ic_connect"
+        android:title="SFTP Connect"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_zip_manager"
+        android:icon="@drawable/ic_zip_file"
+        android:title="File Manager"
+        app:showAsAction="ifRoom" />
+</menu> 

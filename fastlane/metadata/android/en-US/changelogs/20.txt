@@ -1,0 +1,2 @@
+- target SDK 35 (Android 15)
+- Estonian, Netherlands and Chinese translations

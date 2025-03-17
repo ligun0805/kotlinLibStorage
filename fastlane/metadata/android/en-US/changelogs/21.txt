@@ -1,0 +1,3 @@
+- translation updates
+- fix FTP clients on SDKs under 26
+- fix edge-to-egde
